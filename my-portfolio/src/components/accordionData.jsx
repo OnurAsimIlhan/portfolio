@@ -9,7 +9,7 @@ export const accordionData = [
         id: "about_me_paragraph",
         header: "Who Am I?",
         description: [
-          "I am Onur Asim Ilhan, a Computer Science graduate from Bilkent University with a full scholarship. I have a strong background in Data Engineering, MLOps, and Software Engineering, with a passion for machine learning and DevOps. I led multiple award-winning projects and have expertise in designing end-to-end pipelines, deploying models, and working with cutting-edge technologies such as TensorFlow, PySpark, Kubernetes, and more. My goal is to become a top ML Engineer by continuously improving and contributing to impactful projects.",
+          "Hi, I'm Onur. I recently graduated from Bilkent University. While my main passion is Machine Learning, I've had the chance to explore many areas of software development — from frontend and backend to full-stack development, database management, project management, as well as data engineering and MLOps. I’ve led multiple projects during my college years, both for my courses and various competitions. Whether it’s building models, streamlining pipelines, or creating full-scale systems, I’m always ready to face challenges and keep improving my skills as an ML Engineer.",
         ],
       },
       {
@@ -17,46 +17,83 @@ export const accordionData = [
         header: "Education",
         description: [
           "Bachelor of Science (B.Sc.) in Computer Science - Bilkent University, Turkey (2019-2024)",
-          "Top 500 in University Exam, Full Scholarship",
+          "-> Top 500 in University Exam, Full Scholarship",
+          "Izmir High School of Science (2015-2019)",
+          "-> Top 500 in High School Entrance Exam",
         ],
+      },
+      {
+        id: "hobies",
+        header: "My Hobies",
+        description: [
+          "I enjoy playing strategy games like Hearts of Iron and Civ5. My passion for these games started when my mother bought the Age of Empires games when I was a child. Funny enough, I still play AoE 2 even after 15 years.",
+          "I also enjoy story-driven games. I recently played God of War Ragnarok and Black Myth Wukong, both masterpieces with their art, story, and sheer work that went into building them." ,
+          "I love watching TV series, particularly historical dramas. My favorites are The Last Kingdom and Da Vinci's Demons." ,
+          "Lastly, I'm a PC building enthusiast. I started by repairing my laptops and recently built my desktop system. I enjoy optimizing every component for maximum performance, from overclocking the CPU and GPU to experimenting with advanced cooling solutions. ",
+       ],
       },
     ],
   },
-    // Certifications Section
-    {
-      id: "certifications_header",
-      header: "Certifications",
-      hasNestedItems: false,
-      items: [
-        {
-          id: "deep_learning",
-          header: "Deep Learning Specialization by DeepLearning.AI",
-          description: ["Completed all five courses on neural networks and deep learning."],
-          link: "https://www.deeplearning.ai/program/deep-learning-specialization/",
-        },
-        {
-          id: "eda_ibm",
-          header: "EDA for Machine Learning Certificate by IBM",
-          description: ["Learned how to perform exploratory data analysis (EDA) for machine learning projects."],
-          link: "https://www.ibm.com/training/certification",
-        },
-        {
-          id: "backend_frontend_meta",
-          header: "Backend and Frontend Development Professional Specialization by Meta",
-          description: ["Achieved mastery in both backend and frontend web development, focusing on full-stack applications."],
-        },
-        {
-          id: "git_docker_devops",
-          header: "Git, Docker, and DevOps Certificate by Duke University & Mosh Academy",
-          description: ["Gained expertise in version control, containerization, and continuous integration/continuous delivery (CI/CD)."],
-        },
-        {
-          id: "google_certificates",
-          header: "Cybersecurity, Data Analysis, and Project Management Certificates by Google",
-          description: ["Learned essential cybersecurity, data analysis, and project management skills through Google's certificate programs."],
-        },
-      ],
-    },
+  // Certifications Section
+  {
+    id: "certifications_header",
+    header: "Certifications",
+    hasNestedItems: false,
+    items: [
+      {
+        id: "deep_learning",
+        header: "DeepLearning.ai Certificates",
+        description: [
+          "Deep Learning Specialization",
+          "Machine Learning Specialization",
+          "TensorFlow Specialization",
+        ],
+        link: "https://www.deeplearning.ai",
+      },
+      {
+        id: "google_certificates",
+        header: "Google Certificates",
+        description: [
+          "Intro to Cybersecurity",
+          "Data Analysis",
+          "Project Management",
+        ],
+      },
+      {
+        id: "backend_frontend_meta",
+        header: "Meta Certificates",
+        description: [
+          "Meta Frontend Developer Specialization",
+          "Meta Backend Developer Specialization",
+        ],
+      },
+      {
+        id: "kaggle_certificates",
+        header: "Kaggle Certificates",
+        description: [
+          "Details to be added...",
+        ],
+      },
+      {
+        id: "git_docker_devops",
+        header: "Duke University Certificates",
+        description: [
+          "Git",
+          "Docker",
+          "DevOps",
+        ],
+      },
+      {
+        id: "eda_ibm",
+        header: "IBM Certificates",
+        description: [
+          "EDA for Machine Learning",
+        ],
+        link: "https://www.ibm.com/training/certification",
+      },
+    ],
+  },
+  
   // Work Experience Section
   {
     id: "work_experience_header",
@@ -168,5 +205,6 @@ export const accordionData = [
       },
     ],
   },
-
+  
+  
 ];

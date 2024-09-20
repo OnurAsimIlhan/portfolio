@@ -1,35 +1,47 @@
+import mllogos from '../assets/ml-logo.svg';
+import pipeline from '../assets/devops.png';
+import backend from '../assets/backend.png';
+import frontend from '../assets/ui.png';
+import softskills from '../assets/competence.png';
+import database from '../assets/database.png';
+import keras from '../assets/Keras.svg';
+import hug from '../assets/hug.png';
+import xg from '../assets/xgboost-e1606751248237.png';
 export const nodes = [
-  { id: "center", label: "Onur's Skill Map", icon: "" },
+  { id: "center", label: "Onur's Skill Map" },
 
   // Main Categories
-  { id: "machine-learning", label: "Machine Learning", icon: "" },
-  { id: "data-pipeline", label: "Data Pipeline", icon: "" },
-  { id: "backend", label: "Backend", icon: "" },
-  { id: "frontend", label: "Frontend", icon: "" },
-  { id: "database", label: "Database", icon: "" },
-  { id: "devops", label: "DevOps", icon: "" },
-  { id: "soft-skills", label: "Soft Skills", icon: "" },
-
+  { id: "machine-learning", label: "Machine Learning", icon: mllogos,  },
+  { id: "data-pipeline", label: "Dev/Data/ML(ops)", icon: pipeline },
+  { id: "backend", label: "Backend", icon: backend },
+  { id: "frontend", label: "Frontend", icon:frontend },
+  { id: "database", label: "Database", icon: database },
+  { id: "soft-skills", label: "Soft Skills", icon:softskills },
 
   // Machine Learning Sub-nodes
   { id: "python-ml", label: "Python", icon: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
   { id: "tensorflow", label: "TensorFlow", icon: "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" },
-  { id: "keras", label: "Keras", icon: "https://www.vectorlogo.zone/logos/kerasio/kerasio-icon.svg" },
+  { id: "keras", label: "Keras", icon: keras },
   { id: "pytorch", label: "PyTorch", icon: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" },
-  { id: "huggingface", label: "HuggingFace", icon: "https://huggingface.co/front/assets/huggingface_logo-noborder.svg" },
-  { id: "xgboost", label: "XGBoost", icon: "https://seeklogo.com/images/X/xgboost-logo-8e5564c0ae.png" },
+  { id: "huggingface", label: "HuggingFace", icon: hug },
+  { id: "xgboost", label: "XGBoost", icon:xg },
+  
   { id: "lightgbm", label: "LightGBM", icon: "" },
   { id: "opencv", label: "OpenCV", icon: "https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" },
-  { id: "anomaly-detection", label: "Anomaly Detection", icon: "" },
-  { id: "computer-vision", label: "Computer Vision", icon: "" },
-  { id: "llm", label: "LLM", icon: "" },
+  { id: "anomaly-detection", label: "Anomaly Detection" },
+  { id: "computer-vision", label: "Computer Vision" },
+  { id: "llm", label: "LLM" },
   { id: "pandas", label: "Pandas", icon: "https://cdn.worldvectorlogo.com/logos/pandas.svg" },
   { id: "scikit-learn", label: "Scikit-learn", icon: "https://www.vectorlogo.zone/logos/scikit_learn/scikit_learn-icon.svg" },
-  { id: "cnns", label: "CNNs", icon: "" },
-  { id: "rnns", label: "RNNs", icon: "" },
-  { id: "transfer-learning", label: "Transfer Learning", icon: "" },
-  { id: "reinforcement-learning", label: "Reinforcement Learning", icon: "" },
+  { id: "cnns", label: "CNNs" },
+  { id: "rnns", label: "RNNs" },
+  { id: "transfer-learning", label: "Transfer Learning" },
+  { id: "reinforcement-learning", label: "Reinforcement Learning" },
   { id: "kaggle", label: "Kaggle", icon: "https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" },
+  { id: "jupyter", label: "Jupyter", icon: "https://www.vectorlogo.zone/logos/jupyter/jupyter-icon.svg" },
+  { id: "google-colab", label: "Google Colab", icon: "https://www.vectorlogo.zone/logos/google_colab/google_colab-icon.svg" },
+
+
 
   // Data Pipeline Sub-nodes
   { id: "airflow", label: "Airflow", icon: "https://www.svgrepo.com/show/353380/airflow.svg" },
@@ -39,65 +51,77 @@ export const nodes = [
   { id: "logstash", label: "Logstash", icon: "https://www.vectorlogo.zone/logos/elasticco_logstash/elasticco_logstash-icon.svg" },
   { id: "elk-stack", label: "ELK Stack", icon: "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" },
   { id: "mlflow", label: "MLFlow", icon: "https://www.vectorlogo.zone/logos/mlflow/mlflow-icon.svg" },
-  { id: "airbyte", label: "Airbyte", icon: "" },
-  { id: "containerization", label: "Containerization", icon: "" },
-  { id: "model-deployment", label: "Model Deployment", icon: "" },
-  { id: "docker", label: "Docker", icon: "https://www.vectorlogo.zone/logos/docker/docker-icon.svg" },
-  { id: "kubernetes", label: "Kubernetes", icon: "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" },
-  { id: "devops", label: "DevOps", icon: "" },
-  { id: "ci-cd", label: "CI/CD", icon: "" },
-  { id: "git", label: "Git / Version Control", icon: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" },
-
+  { id: "github-actions", label: "GitHub Actions", icon: "https://www.vectorlogo.zone/logos/github/github-icon.svg" },
+  
   // Backend Sub-nodes
   { id: "django", label: "Django", icon: "https://www.vectorlogo.zone/logos/djangoproject/djangoproject-icon.svg" },
   { id: "fastapi", label: "FastAPI", icon: "https://cdn.worldvectorlogo.com/logos/fastapi.svg" },
   { id: "flask", label: "Flask", icon: "https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" },
   { id: "graphql", label: "GraphQL", icon: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" },
-  { id: "restapi", label: "RestAPI", icon: "" },
+  { id: "restapi", label: "RestAPI" },
   { id: "nodejs", label: "Node.js", icon: "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" },
+  { id: "php", label: "PHP", icon: "https://www.vectorlogo.zone/logos/php/php-icon.svg" },
+  { id: "python-backend", label: "Python", icon: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
+  { id: "postman", label: "Postman", icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
+
 
   // Frontend Sub-nodes
   { id: "javascript", label: "JavaScript", icon: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },
   { id: "typescript", label: "TypeScript", icon: "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" },
   { id: "react", label: "React", icon: "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" },
-  { id: "css", label: "CSS", icon: "" },
   { id: "tailwindcss", label: "TailwindCSS", icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
   { id: "bootstrap", label: "Bootstrap", icon: "https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg" },
+  { id: "figma", label: "Figma", icon: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg" },
 
   // Database Sub-nodes
-  { id: "sql", label: "SQL", icon: "" },
   { id: "mysql", label: "MySQL", icon: "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" },
   { id: "mssql", label: "MSSQL", icon: "https://www.vectorlogo.zone/logos/microsoft_sql_server/microsoft_sql_server-icon.svg" },
-  { id: "nosql", label: "NoSQL", icon: "" },
   { id: "mongodb", label: "MongoDB", icon: "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" },
   { id: "elastic", label: "Elastic", icon: "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" },
+  { id: "firebase", label: "Firebase", icon: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" },
+
 
   // Soft Skills Sub-nodes
-  { id: "leadership", label: "Leadership", icon: "" },
-  { id: "collaboration", label: "Collaboration", icon: "" },
-  { id: "problem-solving", label: "Problem-solving", icon: "" },
+  { id: "leadership", label: "Leadership" },
+  { id: "collaboration", label: "Collaboration" },
+  { id: "problem-solving", label: "Problem-solving" },
+  { id: "jira", label: "Jira", icon: "https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg" },
+  { id: "doors", label: "Doors" },
+  { id: "slack", label: "Slack", icon: "https://www.vectorlogo.zone/logos/slack/slack-icon.svg" },
 ];
 export const aboutMeCertificationsNodes = [
   // About Me Nodes
   { id: "about-me", label: "About Me" },
   { id: "education", label: "Education" },
   { id: "hobies", label: "Hobbies" },
-  
+
   // Education-related nodes
   { id: "bilkent-university", label: "Bilkent University" },
   { id: "izmir-science-highschool", label: "Izmir Science Highschool" },
 
   // Hobbies-related nodes
-  { id: "coding", label: "Coding" },
-  { id: "reading", label: "Reading" },
-  { id: "sports", label: "Sports" },
-  { id: "traveling", label: "Traveling" },
-  
-  
+  { id: "gaming", label: "Strategy & Story Games" },
+  { id: "serieses", label: "Watching TV Series" },
+  { id: "pc-building", label: "PC Building" },
+
   // Certifications Nodes
   { id: "certifications", label: "Certifications" },
-  { id: "deep-learning", label: "Deep Learning Specialization" },
-  { id: "eda-cert", label: "EDA for Machine Learning Certificate" },
-  { id: "tensorflow-cert", label: "TensorFlow Developer Certificate" },
-  { id: "git-docker-cert", label: "Git & Docker Certification" },
+  { id: "deep-learning-header", label: "DeepLearning.ai Certs" },
+  { id: "google-header", label: "Google Certs" },
+  { id: "meta-header", label: "Meta Certs" },
+  { id: "duke-header", label: "Duke Univ. Certs" },
+  { id: "ibm-header", label: "IBM Certs" },
+  { id: "kaggle-header", label: "Kaggle Certs" },
+
+  { id: "deep-learning", label: "Deep Learning Spec." },
+  { id: "ml-specialization", label: "ML Spec." },
+  { id: "tensorflow-cert", label: "TensorFlow Spec." },
+  { id: "cybersecurity", label: "Intro to Cybersecurity" },
+  { id: "data-analysis", label: "Data Analysis" },
+  { id: "project-management", label: "Project Mgmt." },
+  { id: "frontend-meta", label: "Meta Frontend Dev. Spec." },
+  { id: "backend-meta", label: "Meta Backend Dev. Spec." },
+  { id: "git-docker-cert", label: "Git, Docker & DevOps Cert." },
+  { id: "eda-cert", label: "EDA for ML" },
+  { id: "kaggle-cert", label: "Kaggle Certs" },
 ];
