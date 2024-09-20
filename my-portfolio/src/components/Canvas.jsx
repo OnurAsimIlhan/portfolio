@@ -1,4 +1,4 @@
-import { GraphCanvas, darkTheme, lightTheme, useSelection } from "reagraph";
+import { GraphCanvas, darkTheme, useSelection } from "reagraph";
 import {
   Accordion,
   AccordionHeader,
@@ -74,7 +74,6 @@ const Canvas = () => {
   };
 
   const {
-    selections,
     actives,
     onNodeClick,
     onCanvasClick: selectionCanvasClick,
