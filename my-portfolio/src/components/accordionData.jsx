@@ -9,7 +9,7 @@ export const accordionData = [
         id: "about_me_paragraph",
         header: "Who Am I?",
         description: [
-          "Hi, I'm Onur. I recently graduated from Bilkent University. While my main passion is Machine Learning, I've had the chance to explore many areas of software development — from frontend and backend to full-stack development, database management, project management, as well as data engineering and MLOps. I’ve led multiple projects during my college years, both for my courses and various competitions. Whether it’s building models, streamlining pipelines, or creating full-scale systems, I’m always ready to face challenges and keep improving my skills as an ML Engineer.",
+          "Hi, I'm Onur. I graduated from Bilkent University. While my main passion is Machine Learning, I've had the chance to explore many areas of software development — from frontend and backend to full-stack development, database management, project management, as well as data engineering and MLOps. I’ve led multiple projects during my college years, both for my courses and various competitions. Whether it’s building models, streamlining pipelines, or creating full-scale systems, I’m always ready to face challenges and keep improving my skills as an ML Engineer.",
         ],
       },
       {
@@ -17,9 +17,9 @@ export const accordionData = [
         header: "Education",
         description: [
           "Bachelor of Science (B.Sc.) in Computer Science - Bilkent University, Turkey (2019-2024)",
-          "-> Top 500 in University Exam, Full Scholarship",
+          "-> Top 500 (%0.0002) among the country in University Exam, Full Scholarship",
           "Izmir High School of Science (2015-2019)",
-          "-> Top 500 in High School Entrance Exam",
+          "-> Top 10 (%0.00001) among the country in High School Entrance Exam",
         ],
       },
       {

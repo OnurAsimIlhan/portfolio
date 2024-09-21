@@ -146,7 +146,7 @@ const Canvas = () => {
             <Accordion
               key={section.id}
               open={openAccordionSection === section.id}
-              className="mb-4 shadow-none border-2 p-3 rounded-3xl bg-[#3c3c3c] border-zinc-500 opacity-95 "
+              className="mb-4 mt-1 p-3 rounded-3xl opacity-95 shadow shadow-[#1de9ac]  "
             >
               <AccordionHeader
                 onClick={() => handleOpen(section.id, projectTechnologies[section.id], true)}
@@ -171,7 +171,7 @@ const Canvas = () => {
                   >
                     <Accordion
                       open={openAccordionItem === item.id}
-                      className="mb-2 "
+                      className="mb-2"
                     >
                       <AccordionHeader
                         onClick={() =>
@@ -205,7 +205,7 @@ const Canvas = () => {
       </div>
 
       {/* Graph Section */}
-      <div className="w-full lg:w-3/4 flex-grow z-10 relative lg:static overflow-hidden">
+      <div className="hidden  lg:flex w-full lg:w-3/4 flex-grow z-10 relative lg:static overflow-hidden">
       <div className="w-full h-auto ">
           {selectedGraph === "technology" ? (
             <GraphCanvas
