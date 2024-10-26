@@ -71,16 +71,19 @@ export const accordionData = [
         id: "kaggle_certificates",
         header: "Kaggle Certificates",
         description: [
-          "Details to be added...",
+          "Pandas",
+          "Intro to Machine Learning",
+          "Feature Engineering",
+          "Data Visualization",
         ],
       },
       {
         id: "git_docker_devops",
         header: "Duke University Certificates",
         description: [
-          "Git",
-          "Docker",
-          "DevOps",
+          "Git Certificate",
+          "Docker Certificate",
+          "DevOps Certificate",
         ],
       },
       {
@@ -90,6 +93,14 @@ export const accordionData = [
           "EDA for Machine Learning",
         ],
         link: "https://www.ibm.com/training/certification",
+      },
+      {
+        id: "udemy_certificates",
+        header: "Udemy Certificates",
+        description: [
+          "Mlops Bootcamp",
+          "GenAI with Langchain and Huggingface"
+        ],
       },
     ],
   },
@@ -104,10 +115,9 @@ export const accordionData = [
         id: "ford_otosan",
         header: "Data/Dev/ML(Ops) Intern @ Ford Otosan",
         description: [
-          "Designed and implemented an end-to-end data pipeline for ADAS (Advanced Driver Assistance Systems), integrating Kafka for real-time data ingestion, PySpark for distributed data processing, and Elastic for fast NoSQL database, logstash, and kibana to visualize the data and logs in a modern dashboard.",
-          "Developed and deployed an anomaly detection model using TensorFlow and integrated it into the data pipeline. Performed EDA, feature engineering, training and fine-tuning on the data provided.",
-          "Utilized Kubernetes and Docker to containerize the entire pipeline, ensuring scalable and efficient deployment.",
-          "Orchestrated the workflow using Apache Airflow, automating data flow and processing tasks.",
+          "Designed and implemented an end-to-end ETL pipeline for ADAS (Advanced Driver Assistance Systems), integrating Kafka for real-time data ingestion, distributed data processing, and Elastic for fast NoSQL database, logstash, and kibana to visualize the data and logs in a modern dashboard.",
+          "Developed and deployed an anomaly detection model using TensorFlow and integrated it into the data pipeline. Also performed EDA, feature engineering, training and fine tuning on the data given.",
+          "Utilized Kubernetes and Docker to containerize the entire pipeline, ensuring scalable and efficient deployment. Orchestrated the workflow using Apache Airflow, automating data flow and processing tasks.",
           "Authored an intern handbook for the ADAS team, detailing technologies, workflows, and onboarding for interns.",
         ],
         nestedItems: [
@@ -146,26 +156,43 @@ export const accordionData = [
     hasNestedItems: true,
     items: [
       {
+        id: "nlp_projects",
+        header: "Advanced NLP Projects with Deployment",
+        description: [
+          "Developed 15+ NLP projects utilizing a variety of technologies, including RNN, ANN, LSTM, GRU, and LLM models.",
+          "Implemented solutions such as chatbots, Retrieval-Augmented Generation (RAG), and fine-tuning with Hugging Face models; deployed using NVIDIA NIM, CrewAI, and AstraDB.",
+          "Utilized MLOps tools for streamlined workflows, orchestrated projects with Airflow, and established CI/CD pipelines to enhance deployment efficiency, combining various technologies like Langchain, GraphDB, Langgraph, and Streamlit.",
+        ],
+      },
+      {
+        id: "ml_projects",
+        header: "End-to-End Machine Learning Projects",
+        description: [
+          "Developed 10+ end-to-end data pipelines for personal machine learning projects using MongoDB, Cassandra, S3, and MLflow for experiment tracking, along with DVC for data versioning.",
+          "Implemented models with XGBoost, Random Forest, and Hugging Face, utilizing Scikit-learn, TensorFlow, and PyTorch for model development; orchestrated with Airflow and containerized using Docker.",
+          "Deployed applications on AWS SageMaker and Bedrock, established CI/CD pipelines with GitHub Actions and CircleCI, and created interfaces with Flask, FastAPI, and Streamlit, integrating monitoring with Grafana.",
+        ],
+      },
+      {
         id: "vigilant",
         header: "Vigilant ~ Award Winner Graduation Project",
         description: [
-          "As a team leader, I worked on computer vision with OpenCV and YOLO libraries.",
-          "Created a real-time dashboard and helped build prediction algorithms for future forecasting.",
+          "Led my team to develop end-to-end in-store analytics solutions with React, Firebase, Python, YOLO, and OpenCV for object detection, counting, and pathing from camera footage. Created a real-time dashboard for devs and customers.",
+          "Achieved 10% shorter queues, 15% increase in peak-hour customers, and 95%+ object detection accuracy, leveraging a recommendation system with Neural Collaborative Filtering and Knowledge Graphs.",
         ],
       },
       {
         id: "pneumonia_detection",
         header: "Pneumonia Image Detection",
         description: [
-          "Led a team in developing a pneumonia detection system for pediatric cases using CNNs and transfer learning techniques, achieving high accuracy (~94%).",
+          "Led team to develop pneumonia detection model using CNN's and transfer learning, achieving 94% accuracy and near human-level error (1-2%). Collaborated with doctors for labeling and augmentation; deployed using Streamlit and AWS. ",
         ],
       },
       {
         id: "airpreneurs",
         header: "Airpreneurs ~ Top Project Among the Program",
         description: [
-          "Led my team in developing an app to reduce arrival time to airports using machine learning techniques: clustering, reinforcement learning, and route optimization technique A*.",
-          "Managed to achieve ~8% time savings across multiple use cases.",
+          "Led team to optimize airport arrival time using A*, reinforcement learning, and clustering algorithms. Achieved a 6% reduction in time from arrival to gate during testing.",
         ],
       },
       {

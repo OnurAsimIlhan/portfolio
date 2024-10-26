@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <nav className="flex relative items-center justify-between py-6 z-30">
       {/* Onur Asım İlhan with custom font */}
-      <div className="flex flex-shrink-0 items-center great-vibes-regular text-3xl ml-1">
+      <div className="flex flex-shrink-0 items-center great-vibes-regular  text-3xl ml-1">
         Onur Asım İlhan
       </div>
       {/* Social media icons */}

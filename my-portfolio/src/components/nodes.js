@@ -9,6 +9,7 @@ import hug from '../assets/hug.png';
 import xg from '../assets/xgboost-e1606751248237.png';
 import dl from "../assets/dl.png";
 import duke from "../assets/duke.png";
+const pythonIcon = "https://www.vectorlogo.zone/logos/python/python-icon.svg";
 export const nodes = [
   { id: "center", label: "Onur's Skill Map" },
 
@@ -21,7 +22,7 @@ export const nodes = [
   { id: "soft-skills", label: "Soft Skills", icon:softskills },
 
   // Machine Learning Sub-nodes
-  { id: "python-ml", label: "Python", icon: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
+  { id: "python-ml", label: "Python", icon: pythonIcon},
   { id: "tensorflow", label: "TensorFlow", icon: "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" },
   { id: "keras", label: "Keras", icon: keras },
   { id: "pytorch", label: "PyTorch", icon: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" },
@@ -108,22 +109,37 @@ export const aboutMeCertificationsNodes = [
 
   // Certifications Nodes
   { id: "certifications", label: "Certifications" },
-  { id: "deep-learning-header", label: "DeepLearning.ai Certs", icon:"https://www.vectorlogo.zone/logos/coursera/coursera-icon.svg" },
-  { id: "google-header", label: "Google Certs" , icon:"https://www.vectorlogo.zone/logos/coursera/coursera-icon.svg"},
-  { id: "meta-header", label: "Meta Certs" , icon:"https://www.vectorlogo.zone/logos/coursera/coursera-icon.svg"},
-  { id: "duke-header", label: "Duke Univ. Certs", icon:"https://www.vectorlogo.zone/logos/coursera/coursera-icon.svg" },
-  { id: "ibm-header", label: "IBM Certs" , icon:"https://www.vectorlogo.zone/logos/coursera/coursera-icon.svg"},
-  { id: "kaggle-header", label: "Kaggle Certs",icon: "https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" },
+  { id: "deep-learning-header", label: "DeepLearning.ai Certs", icon: "https://www.vectorlogo.zone/logos/coursera/coursera-icon.svg" },
+  { id: "google-header", label: "Google Certs", icon: "https://www.vectorlogo.zone/logos/coursera/coursera-icon.svg" },
+  { id: "meta-header", label: "Meta Certs", icon: "https://www.vectorlogo.zone/logos/coursera/coursera-icon.svg" },
+  { id: "duke-header", label: "Duke Univ. Certs", icon: "https://www.vectorlogo.zone/logos/coursera/coursera-icon.svg" },
+  { id: "ibm-header", label: "IBM Certs", icon: "https://www.vectorlogo.zone/logos/coursera/coursera-icon.svg" },
+  { id: "kaggle-header", label: "Kaggle Certs", icon: "https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" },
+  { id: "udemy-header", label: "Udemy Certs", icon: "https://www.vectorlogo.zone/logos/udemy/udemy-icon.svg" }, // New Udemy Header
 
-  { id: "deep-learning", label: "Deep Learning Spec.", icon:dl},
-  { id: "ml-specialization", label: "ML Spec.",icon:dl },
-  { id: "tensorflow-cert", label: "TensorFlow Spec.",icon:dl },
-  { id: "cybersecurity", label: "Intro to Cybersecurity", icon:"https://www.vectorlogo.zone/logos/google/google-icon.svg" },
-  { id: "data-analysis", label: "Data Analysis",icon:"https://www.vectorlogo.zone/logos/google/google-icon.svg" },
-  { id: "project-management", label: "Project Mgmt.",icon:"https://www.vectorlogo.zone/logos/google/google-icon.svg" },
-  { id: "frontend-meta", label: "Meta Frontend Dev. Spec.", icon:"https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg"},
-  { id: "backend-meta", label: "Meta Backend Dev. Spec." , icon:"https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg"},
-  { id: "git-docker-cert", label: "Git, Docker & DevOps Cert." , icon:duke},
-  { id: "eda-cert", label: "EDA for ML" , icon:"https://www.vectorlogo.zone/logos/ibm/ibm-icon.svg"},
-  { id: "kaggle-cert", label: "Kaggle Certs" ,icon: "https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg"},
+  // Individual Certifications
+  { id: "deep-learning", label: "Deep Learning Spec.", icon: dl },
+  { id: "ml-specialization", label: "ML Spec.", icon: dl },
+  { id: "tensorflow-cert", label: "TensorFlow Spec.", icon: dl },
+  { id: "cybersecurity", label: "Intro to Cybersecurity", icon: "https://www.vectorlogo.zone/logos/google/google-icon.svg" },
+  { id: "data-analysis", label: "Data Analysis", icon: "https://www.vectorlogo.zone/logos/google/google-icon.svg" },
+  { id: "project-management", label: "Project Mgmt.", icon: "https://www.vectorlogo.zone/logos/google/google-icon.svg" },
+  { id: "frontend-meta", label: "Meta Frontend Dev. Spec.", icon: "https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" },
+  { id: "backend-meta", label: "Meta Backend Dev. Spec.", icon: "https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" },
+
+
+
+  { id: "devops-cert", label: "Devops Cert.", icon: duke },
+  { id: "docker-cert", label: "Docker Cert.", icon: duke },
+  { id: "git-cert", label: "Git Cert.", icon: duke },
+  
+  { id: "eda-cert", label: "EDA for ML", icon: "https://www.vectorlogo.zone/logos/ibm/ibm-icon.svg" },
+
+  // New Certifications
+  { id: "kaggle-cert-intro", label: "Intro to Machine Learning", icon: "https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" },
+  { id: "kaggle-cert-pandas", label: "Pandas", icon: "https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" },
+  { id: "kaggle-cert-feature", label: "Feature Engineering", icon: "https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" },
+  { id: "kaggle-cert-visualization", label: "Data Visualization", icon: "https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" },
+  { id: "genai-hf-langchain", label: "GenAI with HF & Langchain", icon: "https://www.vectorlogo.zone/logos/udemy/udemy-icon.svg" },
+  { id: "mlops-bootcamp", label: "MLOps Bootcamp", icon: "https://www.vectorlogo.zone/logos/udemy/udemy-icon.svg" },
 ];

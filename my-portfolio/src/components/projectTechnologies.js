@@ -392,7 +392,7 @@ export const projectTechnologies = {
     "hobies-pc-building",
   ],
 
-  certifications_header: [
+certifications_header: [
     "certifications",
     "certifications-header",
     "certifications-deep-learning-header",
@@ -401,6 +401,7 @@ export const projectTechnologies = {
     "certifications-duke-header",
     "certifications-ibm-header",
     "certifications-kaggle-header",
+    "certifications-udemy-header", // Added Udemy header
     "deep-learning",
     "ml-specialization",
     "tensorflow-cert",
@@ -412,12 +413,15 @@ export const projectTechnologies = {
     "git-docker-cert",
     "eda-cert",
     "kaggle-cert",
+    "genai-hf-langchain", // New Udemy Certification
+    "mlops-bootcamp", // New Udemy Certification
     "deep-learning-header",
     "google-header",
     "meta-header",
     "duke-header",
     "ibm-header",
     "kaggle-header",
+    "udemy-header", // Added Udemy Header
     "deep-learning-header-deep-learning",
     "deep-learning-header-ml-specialization",
     "deep-learning-header-tensorflow-cert",
@@ -429,6 +433,22 @@ export const projectTechnologies = {
     "duke-header-git-docker-cert",
     "ibm-header-eda-cert",
     "kaggle-header-kaggle-cert",
+    "udemy-header-genai-hf-langchain", // Added Udemy Certification
+    "udemy-header-mlops-bootcamp", // Added Udemy Certification,
+    "kaggle-header-kaggle-cert-intro",
+    "kaggle-header-kaggle-cert-pandas",
+    "kaggle-header-kaggle-cert-feature",
+    "kaggle-header-kaggle-cert-visualization",
+    "kaggle-cert-intro",
+    "kaggle-cert-pandas",
+    "kaggle-cert-feature",
+    "kaggle-cert-visualization",
+    "duke-header-devops-cert",
+    "duke-header-docker-cert",
+    "duke-header-git-cert",
+    "devops-cert",
+    "docker-cert",
+    "git-cert",
   ],
 
   deep_learning: [
@@ -443,6 +463,7 @@ export const projectTechnologies = {
     "ml-specialization",
     "tensorflow-cert",
   ],
+
   google_certificates: [
     "certifications",
     "certifications-header",
@@ -474,7 +495,14 @@ export const projectTechnologies = {
     "duke-header",
     "duke-header-git-docker-cert",
     "git-docker-cert",
+    "duke-header-devops-cert",
+    "duke-header-docker-cert",
+    "duke-header-git-cert",
+    "devops-cert",
+    "docker-cert",
+    "git-cert",
   ],
+
   eda_ibm: [
     "certifications",
     "certifications-header",
@@ -483,6 +511,7 @@ export const projectTechnologies = {
     "ibm-header-eda-cert",
     "eda-cert",
   ],
+
   kaggle_certificates: [
     "certifications",
     "certifications-header",
@@ -490,5 +519,24 @@ export const projectTechnologies = {
     "kaggle-header",
     "kaggle-header-kaggle-cert",
     "kaggle-cert",
+    "kaggle-header-kaggle-cert-intro",
+    "kaggle-header-kaggle-cert-pandas",
+    "kaggle-header-kaggle-cert-feature",
+    "kaggle-header-kaggle-cert-visualization",
+    "kaggle-cert-intro",
+    "kaggle-cert-pandas",
+    "kaggle-cert-feature",
+    "kaggle-cert-visualization",
   ],
+
+  udemy_certificates: [ // New Udemy section
+    "certifications",
+    "certifications-header",
+    "certifications-udemy-header",
+    "udemy-header",
+    "udemy-header-genai-hf-langchain",
+    "udemy-header-mlops-bootcamp",
+    "genai-hf-langchain",
+    "mlops-bootcamp",
+  ]
 };

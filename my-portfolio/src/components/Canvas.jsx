@@ -42,6 +42,8 @@ const Canvas = () => {
     // Update selected technologies when opening an accordion
     if (openAccordionItem !== id) {
       setSelectedTechnologies(technologies);
+      console.log()
+
     } else {
       setSelectedTechnologies([]);
     }
@@ -78,6 +80,8 @@ const Canvas = () => {
     setSelectedTechnologies([]);
     setOpenAccordionSection(null);
     setOpenAccordionItem(null);
+    graphRef.current?.centerGraph();
+
   };
 
   const {
@@ -138,15 +142,15 @@ const Canvas = () => {
   };
 
   return (
-    <div className="flex flex-col lg:flex-row border-b border-neutral-900 pb-4 min-h-[calc(100vh-140px)] overflow-hidden">
+    <div className="flex flex-col lg:flex-row border-b border-neutral-900  pb-4 min-h-[calc(100vh-140px)] overflow-hidden">
       {/* Accordion Section */}
-      <div className="w-full lg:w-1/3 relative z-20">
-        <div className="flex flex-col items-center lg:items-start">
+      <div className="w-full lg:w-1/3 relative z-20 ">
+        <div className="flex flex-col items-center  lg:items-start">
           {accordionData.map((section) => (
             <Accordion
               key={section.id}
               open={openAccordionSection === section.id}
-              className="mb-4 mt-1 p-3 rounded-3xl opacity-95 shadow shadow-[#1de9ac]  "
+              className="mb-4 ml-1 mt-1 p-3 rounded-2xl shadow shadow-[#1de9ac]  "
             >
               <AccordionHeader
                 onClick={() => handleOpen(section.id, projectTechnologies[section.id], true)}
@@ -205,7 +209,7 @@ const Canvas = () => {
       </div>
 
       {/* Graph Section */}
-      <div className="hidden  lg:flex w-full lg:w-3/4 flex-grow z-10 relative lg:static overflow-hidden">
+      <div className="hidden lg:flex w-full lg:w-3/4 flex-grow z-10 relative lg:static overflow-hidden ml-5">
       <div className="w-full h-auto ">
           {selectedGraph === "technology" ? (
             <GraphCanvas
@@ -222,6 +226,7 @@ const Canvas = () => {
                 linkDistance: 80,
               }}
               cameraMode="pan"
+              
             />
           ) : (
             <GraphCanvas

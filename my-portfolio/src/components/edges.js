@@ -83,117 +83,55 @@ export const aboutMeCertificationsEdges = [
   // About Me Edges
   { id: "about-me-education", source: "about-me", target: "education" },
   { id: "about-me-hobies", source: "about-me", target: "hobies" },
-  {
-    id: "about-me-certifications",
-    source: "about-me",
-    target: "certifications",
-  },
+  { id: "about-me-certifications", source: "about-me", target: "certifications" },
 
   // Education-related edges
-  {
-    id: "education-bilkent-university",
-    source: "education",
-    target: "bilkent-university",
-  },
-  {
-    id: "education-izmir-science-highschool",
-    source: "education",
-    target: "izmir-science-highschool",
-  },
+  { id: "education-bilkent-university", source: "education", target: "bilkent-university" },
+  { id: "education-izmir-science-highschool", source: "education", target: "izmir-science-highschool" },
 
   // Hobbies-related edges
   { id: "hobies-gaming", source: "hobies", target: "gaming" },
   { id: "hobies-serieses", source: "hobies", target: "serieses" },
   { id: "hobies-pc-building", source: "hobies", target: "pc-building" },
 
-  // Birthplace-related edge
-
   // Certifications-related edges
-  {
-    id: "certifications-deep-learning-header",
-    source: "certifications",
-    target: "deep-learning-header",
-  },
-  {
-    id: "certifications-google-header",
-    source: "certifications",
-    target: "google-header",
-  },
-  {
-    id: "certifications-meta-header",
-    source: "certifications",
-    target: "meta-header",
-  },
-  {
-    id: "certifications-duke-header",
-    source: "certifications",
-    target: "duke-header",
-  },
-  {
-    id: "certifications-ibm-header",
-    source: "certifications",
-    target: "ibm-header",
-  },
-  {
-    id: "certifications-kaggle-header",
-    source: "certifications",
-    target: "kaggle-header",
-  },
+  { id: "certifications-deep-learning-header", source: "certifications", target: "deep-learning-header" },
+  { id: "certifications-google-header", source: "certifications", target: "google-header" },
+  { id: "certifications-meta-header", source: "certifications", target: "meta-header" },
+  { id: "certifications-duke-header", source: "certifications", target: "duke-header" },
+  { id: "certifications-ibm-header", source: "certifications", target: "ibm-header" },
+  { id: "certifications-kaggle-header", source: "certifications", target: "kaggle-header" },
+  { id: "certifications-udemy-header", source: "certifications", target: "udemy-header" }, // New Udemy Header Connection
 
-  {
-    id: "deep-learning-header-deep-learning",
-    source: "deep-learning-header",
-    target: "deep-learning",
-  },
-  {
-    id: "deep-learning-header-ml-specialization",
-    source: "deep-learning-header",
-    target: "ml-specialization",
-  },
-  {
-    id: "deep-learning-header-tensorflow-cert",
-    source: "deep-learning-header",
-    target: "tensorflow-cert",
-  },
+  // DeepLearning.ai Certifications
+  { id: "deep-learning-header-deep-learning", source: "deep-learning-header", target: "deep-learning" },
+  { id: "deep-learning-header-ml-specialization", source: "deep-learning-header", target: "ml-specialization" },
+  { id: "deep-learning-header-tensorflow-cert", source: "deep-learning-header", target: "tensorflow-cert" },
 
-  {
-    id: "google-header-cybersecurity",
-    source: "google-header",
-    target: "cybersecurity",
-  },
-  {
-    id: "google-header-data-analysis",
-    source: "google-header",
-    target: "data-analysis",
-  },
-  {
-    id: "google-header-project-management",
-    source: "google-header",
-    target: "project-management",
-  },
+  // Google Certifications
+  { id: "google-header-cybersecurity", source: "google-header", target: "cybersecurity" },
+  { id: "google-header-data-analysis", source: "google-header", target: "data-analysis" },
+  { id: "google-header-project-management", source: "google-header", target: "project-management" },
 
-  {
-    id: "meta-header-frontend-meta",
-    source: "meta-header",
-    target: "frontend-meta",
-  },
-  {
-    id: "meta-header-backend-meta",
-    source: "meta-header",
-    target: "backend-meta",
-  },
+  // Meta Certifications
+  { id: "meta-header-frontend-meta", source: "meta-header", target: "frontend-meta" },
+  { id: "meta-header-backend-meta", source: "meta-header", target: "backend-meta" },
 
-  {
-    id: "duke-header-git-docker-cert",
-    source: "duke-header",
-    target: "git-docker-cert",
-  },
+  // Duke University Certification duke-header-git-docker-cert
+  { id: "duke-header-devops-cert", source: "duke-header", target: "devops-cert" },
+  { id: "duke-header-docker-cert", source: "duke-header", target: "docker-cert" },
+  { id: "duke-header-git-cert", source: "duke-header", target: "git-cert"},
 
+  // IBM Certification
   { id: "ibm-header-eda-cert", source: "ibm-header", target: "eda-cert" },
 
-  {
-    id: "kaggle-header-kaggle-cert",
-    source: "kaggle-header",
-    target: "kaggle-cert",
-  },
+  // Kaggle Certifications
+  { id: "kaggle-header-kaggle-cert-intro", source: "kaggle-header", target: "kaggle-cert-intro" },
+  { id: "kaggle-header-kaggle-cert-pandas", source: "kaggle-header", target: "kaggle-cert-pandas" },
+  { id: "kaggle-header-kaggle-cert-feature", source: "kaggle-header", target: "kaggle-cert-feature" },
+  { id: "kaggle-header-kaggle-cert-visualization", source: "kaggle-header", target: "kaggle-cert-visualization" },
+
+  // Udemy Certifications
+  { id: "udemy-header-genai-hf-langchain", source: "udemy-header", target: "genai-hf-langchain" },
+  { id: "udemy-header-mlops-bootcamp", source: "udemy-header", target: "mlops-bootcamp" },
 ];
