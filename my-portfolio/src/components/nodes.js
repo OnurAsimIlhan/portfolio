@@ -4,94 +4,171 @@ import backend from '../assets/backend.png';
 import frontend from '../assets/ui.png';
 import softskills from '../assets/competence.png';
 import database from '../assets/database.png';
-import keras from '../assets/Keras.svg';
+
+import keras from '../assets/Keras.png';
 import hug from '../assets/hug.png';
 import xg from '../assets/xgboost-e1606751248237.png';
 import dl from "../assets/dl.png";
 import duke from "../assets/duke.png";
-const pythonIcon = "https://www.vectorlogo.zone/logos/python/python-icon.svg";
+
+// Dynamic icon links
+const tensorflowIcon = "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg";
+const pytorchIcon = "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg";
+const sklearnIcon = "";
+const opencvIcon = "https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg";
+const pandasIcon = "https://cdn.worldvectorlogo.com/logos/pandas.svg";
+const kaggleIcon = "https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg";
+const djangoIcon = "https://www.vectorlogo.zone/logos/djangoproject/djangoproject-icon.svg";
+import flaskIcon from "../assets/Flask.png";
+const fastapiIcon = "https://cdn.worldvectorlogo.com/logos/fastapi.svg";
+const graphqlIcon = "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg";
+const postmanIcon = "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg";
+const reactjsIcon = "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg";
+const tailwindIcon = "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg";
+const bootstrapIcon = "https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg";
+const javascriptIcon = "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg";
+const typescriptIcon = "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg";
+const figmaIcon = "https://www.vectorlogo.zone/logos/figma/figma-icon.svg";
+const mysqlIcon = "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg";
+const postgresqlIcon = "https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg";
+const mongodbIcon = "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg";
+const firebaseIcon = "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg";
+import cassandraIcon from "../assets/cassandra-svgrepo-com.svg";
+const elkStackIcon = "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg";
+import airflowIcon from "../assets/Apache Airflow.png";
+const kafkaIcon = "https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg";
+const gitIcon = "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg";
+const githubActionsIcon = "https://www.vectorlogo.zone/logos/github/github-icon.svg";
+import mlflowIcon from "../assets/mlflow-black.svg";
+const dockerIcon = "https://www.vectorlogo.zone/logos/docker/docker-icon.svg";
+const kubernetesIcon = "https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg";
+import awsIcon from "../assets/AWS-Cloud-logo_32.svg";
+import s3Icon from "../assets/Arch_Amazon-Simple-Storage-Service_64.svg";
+import ec2Icon from "../assets/EC2-instance-contents_32.svg";
+const bert = "";
+const llama = "";
+const mistral = "";
+const gpt = "";
+import streamlit from "../assets/Streamlit.png";
+const restapi = "";
+import jinja from "../assets/jinja-svgrepo-com.svg";
+import rds from '../assets/Arch_Amazon-RDS_64.svg';
+const circleai = "https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg";
+import dvc from "../assets/dvc-svgrepo-com.svg";
+const dagshub = "";
+const grafana = "https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg";
+const nvidia_nim = "https://www.vectorlogo.zone/logos/nvidia/nvidia-icon.svg";
+const groq = "";
+import sagemaker from '../assets/Arch_Amazon-SageMaker_64.png';
+import bedrock from '../assets/Arch_Amazon-Bedrock_64.svg';
+import apigateway from '../assets/Arch_Amazon-API-Gateway_64.svg';
+import lambda from '../assets/Arch_AWS-Lambda_64.svg';
+const slack = "https://www.vectorlogo.zone/logos/slack/slack-icon.svg";
+const jira = "https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg";
+const doors = "https://www.vectorlogo.zone/logos/ibm/ibm-icon.svg";
+
 export const nodes = [
-  { id: "center", label: "Onur's Skill Map" },
+  { id: "center", label: "Onur's Skillmap" },
 
   // Main Categories
-  { id: "machine-learning", label: "Machine Learning", icon: mllogos,  },
-  { id: "data-pipeline", label: "Dev/Data/ML(ops)", icon: pipeline },
-  { id: "backend", label: "Backend", icon: backend },
-  { id: "frontend", label: "Frontend", icon:frontend },
-  { id: "database", label: "Database", icon: database },
-  { id: "soft-skills", label: "Soft Skills", icon:softskills },
+  { id: "ml-dl-node", label: "ML & DL", icon: mllogos },
+  { id: "backend-node", label: "Backend", icon: backend },
+  { id: "frontend-node", label: "Frontend", icon: frontend },
+  { id: "databases-node", label: "Databases", icon: database },
+  { id: "dev-data-mlops-node", label: "Dev/Data/ML(Ops)", icon: pipeline },
+  { id: "cloud-node", label: "Cloud", icon: awsIcon },
+  { id: "soft-skills-node", label: "Soft Skills", icon: softskills },
 
-  // Machine Learning Sub-nodes
-  { id: "python-ml", label: "Python", icon: pythonIcon},
-  { id: "tensorflow", label: "TensorFlow", icon: "https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" },
+  // ML & DL
+  { id: "tensorflow", label: "TensorFlow", icon: tensorflowIcon },
+  { id: "pytorch", label: "PyTorch", icon: pytorchIcon },
+  { id: "scikit-learn", label: "Scikit-learn", icon: sklearnIcon },
   { id: "keras", label: "Keras", icon: keras },
-  { id: "pytorch", label: "PyTorch", icon: "https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" },
-  { id: "huggingface", label: "HuggingFace", icon: hug },
-  { id: "xgboost", label: "XGBoost", icon:xg },
-  
-  { id: "lightgbm", label: "LightGBM", icon: "" },
-  { id: "opencv", label: "OpenCV", icon: "https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" },
-  { id: "anomaly-detection", label: "Anomaly Detection" },
-  { id: "computer-vision", label: "Computer Vision" },
-  { id: "llm", label: "LLM" },
-  { id: "pandas", label: "Pandas", icon: "https://cdn.worldvectorlogo.com/logos/pandas.svg" },
-  { id: "scikit-learn", label: "Scikit-learn", icon: "https://www.vectorlogo.zone/logos/scikit_learn/scikit_learn-icon.svg" },
+  { id: "huggingface", label: "Hugging Face", icon: hug },
   { id: "cnns", label: "CNNs" },
   { id: "rnns", label: "RNNs" },
+  { id: "transformers", label: "Transformers" },
+  { id: "bert", label: "BERT", icon: bert},
   { id: "transfer-learning", label: "Transfer Learning" },
-  { id: "reinforcement-learning", label: "Reinforcement Learning" },
-  { id: "kaggle", label: "Kaggle", icon: "https://www.vectorlogo.zone/logos/kaggle/kaggle-icon.svg" },
-  { id: "jupyter", label: "Jupyter", icon: "https://www.vectorlogo.zone/logos/jupyter/jupyter-icon.svg" },
-  { id: "google-colab", label: "Google Colab", icon: "https://www.vectorlogo.zone/logos/google_colab/google_colab-icon.svg" },
-  { id: "docker", label: "Docker"},
-  {id: "kubernetes", label: "Kubernetes"},
-
-  // Data Pipeline Sub-nodes
-  { id: "airflow", label: "Airflow", icon: "https://www.svgrepo.com/show/353380/airflow.svg" },
-  { id: "kafka", label: "Kafka", icon: "https://www.vectorlogo.zone/logos/apache_kafka/apache_kafka-icon.svg" },
-  { id: "pyspark", label: "PySpark", icon: "https://www.vectorlogo.zone/logos/apache_spark/apache_spark-icon.svg" },
-  { id: "spark", label: "Spark", icon: "https://www.vectorlogo.zone/logos/apache_spark/apache_spark-icon.svg" },
-  { id: "logstash", label: "Logstash", icon: "https://www.vectorlogo.zone/logos/elasticco_logstash/elasticco_logstash-icon.svg" },
-  { id: "elk-stack", label: "ELK Stack", icon: "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" },
-  { id: "mlflow", label: "MLFlow", icon: "https://www.vectorlogo.zone/logos/mlflow/mlflow-icon.svg" },
-  { id: "github-actions", label: "GitHub Actions", icon: "https://www.vectorlogo.zone/logos/github/github-icon.svg" },
-   {id: "git", label:"Git/Version Control"},
-  // Backend Sub-nodes
-  { id: "django", label: "Django", icon: "https://www.vectorlogo.zone/logos/djangoproject/djangoproject-icon.svg" },
-  { id: "fastapi", label: "FastAPI", icon: "https://cdn.worldvectorlogo.com/logos/fastapi.svg" },
-  { id: "flask", label: "Flask", icon: "https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" },
-  { id: "graphql", label: "GraphQL", icon: "https://www.vectorlogo.zone/logos/graphql/graphql-icon.svg" },
-  { id: "restapi", label: "RestAPI" },
-  { id: "nodejs", label: "Node.js", icon: "https://www.vectorlogo.zone/logos/nodejs/nodejs-icon.svg" },
-  { id: "php", label: "PHP", icon: "https://www.vectorlogo.zone/logos/php/php-icon.svg" },
-  { id: "python-backend", label: "Python", icon: "https://www.vectorlogo.zone/logos/python/python-icon.svg" },
-  { id: "postman", label: "Postman", icon: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
+  { id: "fine-tuning", label: "Fine-Tuning" },
+  { id: "quantization", label: "Quantization" },
+  { id: "lora", label: "LoRA" },
+  { id: "anomaly-detection", label: "Anomaly Detection" },
+  { id: "computer-vision", label: "Computer Vision" },
+  { id: "xgboost", label: "XGBoost", icon: xg },
+  { id: "opencv", label: "OpenCV", icon: opencvIcon },
+  { id: "pandas", label: "Pandas", icon: pandasIcon },
+  { id: "gpt", label: "GPT", icon: gpt },
+  { id: "llama", label: "LLama", icon: llama },
+  { id: "mistral", label: "Mistral", icon: mistral },
+  { id: "kaggle", label: "Kaggle", icon: kaggleIcon },
 
 
-  // Frontend Sub-nodes
-  { id: "javascript", label: "JavaScript", icon: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg" },
-  { id: "typescript", label: "TypeScript", icon: "https://www.vectorlogo.zone/logos/typescriptlang/typescriptlang-icon.svg" },
-  { id: "react", label: "React", icon: "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" },
-  { id: "tailwindcss", label: "TailwindCSS", icon: "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" },
-  { id: "bootstrap", label: "Bootstrap", icon: "https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg" },
-  { id: "figma", label: "Figma", icon: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg" },
+  // Backend
+  { id: "django", label: "Django", icon: djangoIcon },
+  { id: "flask", label: "Flask", icon: flaskIcon },
+  { id: "fastapi", label: "FastAPI", icon: fastapiIcon },
+  { id: "streamlit", label: "Streamlit", icon: streamlit},
+  { id: "restapi", label: "REST API", icon: restapi},
+  { id: "graphql", label: "GraphQL", icon: graphqlIcon },
+  { id: "postman", label: "Postman", icon: postmanIcon },
+  { id: "jinja2", label: "Jinja2", icon: jinja },
 
-  // Database Sub-nodes
-  { id: "mysql", label: "MySQL", icon: "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg" },
-  { id: "mssql", label: "MSSQL", icon: "https://www.vectorlogo.zone/logos/microsoft_sql_server/microsoft_sql_server-icon.svg" },
-  { id: "mongodb", label: "MongoDB", icon: "https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" },
-  { id: "elastic", label: "Elastic", icon: "https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" },
-  { id: "firebase", label: "Firebase", icon: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" },
+  // Frontend
+  { id: "reactjs", label: "React.js", icon: reactjsIcon },
+  { id: "tailwind", label: "Tailwind", icon: tailwindIcon },
+  { id: "bootstrap", label: "Bootstrap", icon: bootstrapIcon},
+  { id: "javascript", label: "JavaScript", icon: javascriptIcon},
+  { id: "typescript", label: "TypeScript", icon: typescriptIcon },
+  { id: "figma", label: "Figma", icon: figmaIcon},
+
+  // Databases
+  { id: "mysql", label: "MySQL", icon: mysqlIcon },
+  { id: "postgresql", label: "PostgreSQL", icon: postgresqlIcon },
+  { id: "rds", label: "RDS (AWS)", icon: rds },
+  { id: "mongodb", label: "MongoDB", icon: mongodbIcon },
+  { id: "firebase", label: "Firebase", icon: firebaseIcon },
+  { id: "cassandra", label: "Cassandra", icon: cassandraIcon },
+  { id: "elk-stack", label: "ELK Stack", icon: elkStackIcon},
+
+  // Dev/Data/ML(Ops)
+
+  { id: "airflow", label: "Airflow/Astro", icon: airflowIcon },
+  { id: "kafka", label: "Kafka", icon: kafkaIcon },
+  { id: "etl", label: "ETL" },
+  { id: "git", label: "Git", icon: gitIcon },
+  { id: "github-actions", label: "GitHub Actions", icon: githubActionsIcon },
+  { id: "circleci", label: "CircleCI", icon: circleai},
+  { id: "mlflow", label: "MLflow", icon: mlflowIcon },
+  { id: "dvc", label: "DVC", icon: dvc },
+  { id: "dagshub", label: "DagsHub", icon: dagshub},
+  { id: "docker", label: "Docker", icon: dockerIcon },
+  { id: "kubernetes", label: "Kubernetes", icon: kubernetesIcon },
+  { id: "grafana", label: "Grafana", icon: grafana },
+  { id: "nvidia-nim", label: "Nvidia-NIM", icon: nvidia_nim },
+  { id: "groq", label: "Groq", icon: groq },
+  { id: "lpu", label: "LPU" },
 
 
-  // Soft Skills Sub-nodes
-  { id: "leadership", label: "Leadership" },
-  { id: "collaboration", label: "Collaboration" },
-  { id: "problem-solving", label: "Problem-solving" },
-  { id: "jira", label: "Jira", icon: "https://www.vectorlogo.zone/logos/atlassian_jira/atlassian_jira-icon.svg" },
-  { id: "doors", label: "Doors" },
-  { id: "slack", label: "Slack", icon: "https://www.vectorlogo.zone/logos/slack/slack-icon.svg" },
+  // Cloud
+  { id: "aws", label: "AWS", icon: awsIcon},
+  { id: "sagemaker", label: "SageMaker", icon: sagemaker },
+  { id: "bedrock", label: "Bedrock", icon: bedrock},
+  { id: "s3", label: "S3", icon: s3Icon },
+  { id: "ec2", label: "EC2", icon: ec2Icon},
+  { id: "api-gateway", label: "API Gateway", icon: apigateway },
+  { id: "lambda", label: "Lambda", icon: lambda },
+
+  // Soft Skills
+  { id: "agile", label: "Agile" },
+  { id: "scrum", label: "Scrum" },
+  { id: "jira", label: "Jira", icon: jira },
+  { id: "doors", label: "Doors", icon: doors },
+  { id: "slack", label: "Slack", icon: slack },
+
+  
 ];
+
 export const aboutMeCertificationsNodes = [
   // About Me Nodes
   { id: "about-me", label: "About Me" },
